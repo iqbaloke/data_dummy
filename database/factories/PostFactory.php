@@ -16,8 +16,8 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->title,
-            'slug' => Str::slug($this->faker->title),
+            'title' => $this->faker->name,
+            'slug' => Str::slug($this->faker->name),
             'body' => $this->faker->text,
             'user_id' => User::factory()->create(),
         ];
